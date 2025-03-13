@@ -372,7 +372,7 @@ class PointCloudDiffusion:
             x_t_1 = posterior_mean + torch.sqrt(posterior_variance) * noise
             
             return x_t_1
-    
+        
     def p_sample_loop(self, shape):
         """
         전체 역 확산 프로세스
